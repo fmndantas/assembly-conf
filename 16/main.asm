@@ -1,7 +1,7 @@
 %include	'functions.asm'
 
 SECTION .data
-
+	
 SECTION .bss
 	
 SECTION .text

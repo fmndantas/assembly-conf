@@ -20,7 +20,7 @@ atoi:
 	MOV	ebx, 10
 	MUL	ebx		; eax := 10 * eax
 	INC	ecx
-	JMP	.MULtiplyLoop	; converter proximo byte para numero
+	JMP	.multiplyLoop	; converter proximo byte para numero
 		
 .finished:
 	MOV	ebx, 10		; corrige ultima MULtiplicacao desnecessaria de eax
