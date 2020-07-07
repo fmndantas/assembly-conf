@@ -1,2 +1,2 @@
 # assembly-conf
-Assembly examples using nasm and linux commands
+Exemplos de assembly com nasm e em ambiente linux
