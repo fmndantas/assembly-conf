@@ -1,12 +1,14 @@
 %include	'functions.asm'
 
 SECTION .data
+string 	db	
 	
 SECTION .bss
 	
 SECTION .text
 global _start
 
+	
 _start:
 	pop	ecx		; numero de argumentos
 	pop	edx		; nome do programa

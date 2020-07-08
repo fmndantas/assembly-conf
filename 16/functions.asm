@@ -9,7 +9,7 @@ atoi:
 
 .multiplyLoop:
 	XOR	ebx, ebx	; zero parte alta e parte baixa de ebx
-	MOV 	bl, [esi+ecx]	; MOVe um byte da string de esi+ecx para byte menos significativo de ebx (bl)
+	MOV 	bl, [esi+ecx]	; move um byte da string de esi+ecx para byte menos significativo de ebx (bl)
 	CMP	bl, 48		; checa se bl eh 'maior' que 1 (ascii)
 	JL	.finished	; se for menor, termina
 	CMP	bl, 57		; checa se bl eh 'menor' que 9 (ascii)
@@ -56,10 +56,10 @@ printNextNumber:
 	CMP	ecx, 0
 	JNZ	printNextNumber
 
-	POP	eax
-	POP	ecx
-	POP	edx
 	POP	esi
+	POP	edx
+	POP	ecx
+	POP	eax
 
 	RET
 	
